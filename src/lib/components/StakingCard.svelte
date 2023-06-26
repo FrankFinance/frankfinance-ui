@@ -75,7 +75,7 @@
               <PercentIcon class="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div class="text-2xl font-bold">1,20  0%</div>
+              <div class="text-2xl font-bold">1,200%</div>
             </CardContent>
           </Card>
         </CardContent>
