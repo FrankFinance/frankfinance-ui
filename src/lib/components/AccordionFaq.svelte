@@ -17,20 +17,19 @@
       <AccordionItem value="item-1">
         <AccordionTrigger>How does this work?</AccordionTrigger>
         <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
+          We will be providing 10% of the total supply (after 75% has been burned) to incentivize staking rewards. Users can stake their FRANK/USDC LP to start earning rewards.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
         <AccordionTrigger>Can I get in touch with the team?</AccordionTrigger>
         <AccordionContent>
-          Yes. It comes with default styles that matches the other components'
-          aesthetic.
+          Yes. You can reach out in our discord.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>Why are yields so high?</AccordionTrigger>
+        <AccordionTrigger>When will staking be available?</AccordionTrigger>
         <AccordionContent>
-          Yes. It's animated by default, but you can disable it if you prefer.
+          Staking will be available on June 30th, 2023. Stay tuned for updates!
         </AccordionContent>
       </AccordionItem>
     </Accordion>
