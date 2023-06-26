@@ -14,7 +14,7 @@
 </script>
 
 {#if onLoad}
-	<div class="flex flex-col mt-20 mb-8">
+	<div class="flex flex-col mt-16	mb-16">
 		<div class="flex gap-14 lg:gap-24 justify-center lg:items-end w-full p-8 lg:flex-row flex-col">
 			<CtaCard />
 			<StakingCard />

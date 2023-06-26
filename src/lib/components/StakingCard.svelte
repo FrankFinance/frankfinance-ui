@@ -24,7 +24,7 @@
   import { DollarSign, HashIcon, PercentIcon } from "lucide-svelte";
 </script>
 
-<div in:fade={{ duration: 100 }} > 
+<div in:fade|local={{ duration: 100 }} > 
   <Tabs value="stake" class="lg:max-w-xl">
     <TabsList class="grid w-full grid-cols-2">
       <TabsTrigger value="stake">Stake</TabsTrigger>
@@ -35,7 +35,7 @@
         <CardHeader class="space-y-1">
           <CardTitle>Stake your $FRANK</CardTitle>
           <CardDescription>
-            Stake your $FRANK to start receiving a subsidized yield - first 30 days have boosted emissions. Staking begins July 29th.
+            Stake your $FRANK to start receiving a subsidized yield - first 30 days have boosted emissions. Staking begins June 29th.
           </CardDescription>
         </CardHeader>
         <CardContent class="grid gap-6">
@@ -75,7 +75,7 @@
               <PercentIcon class="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div class="text-2xl font-bold">2,000.00%</div>
+              <div class="text-2xl font-bold">1,20  0%</div>
             </CardContent>
           </Card>
         </CardContent>
@@ -83,12 +83,12 @@
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger class="w-full">
-                <Button variant="outline" class="w-full">
+                <Button variant="outline" class="w-full" disabled>
                   Stake
                 </Button>
               </TooltipTrigger>
               <TooltipContent class="bg-red-100 w-full">
-                <p>Unavailable</p>
+                <p>Unavailable until 06/29</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
@@ -146,9 +146,18 @@
           </Card>
         </CardContent>
         <CardFooter>
-          <Button class="w-full" variant="outline">
-            Claim
-          </Button>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger class="w-full">
+                <Button variant="outline" class="w-full" disabled>
+                  Claim
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent class="bg-red-100 w-full">
+                <p>Unavailable until 06/29</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </CardFooter>
       </Card>
     </TabsContent>

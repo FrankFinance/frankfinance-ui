@@ -14,7 +14,7 @@
 	}
 </script>
 
-<div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4 p-8 lg:mx-auto" in:fade={{ duration: 100 }}>
+<div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4 p-8 lg:mx-auto" in:fade|local={{ duration: 100 }}>
 	<Card>
 		<CardHeader
 			class="flex flex-row items-center justify-between space-y-0 pb-2"
@@ -79,9 +79,9 @@
 			<Users class="h-4 w-4 text-muted-foreground" />
 		</CardHeader>
 		<CardContent>
-			<div class="text-2xl font-bold">15,000</div>
+			<div class="text-2xl font-bold">2,500</div>
 			<p class="text-xs text-muted-foreground">
-				$FRANK per day - 30d left
+				$FRANK per day (boosted for 15d)
 			</p>
 		</CardContent>
 	</Card>

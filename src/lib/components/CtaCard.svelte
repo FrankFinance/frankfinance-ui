@@ -1,5 +1,5 @@
 <script>
-	import { Discord } from "svelte-stacks-icons";
+	import { Twitter } from "svelte-stacks-icons";
 	import { fade } from "svelte/transition";
 	import SpringAction from "$components/animate/SpringAction.svelte";
 	import { Button } from "$components/ui/button";
@@ -8,7 +8,7 @@
 	import sushiswapLogo from '$lib/assets/sushiswap-logo.svg';
 	import farmerFrankLogo from '$lib/assets/frank-farmer.png'
 </script>
-<div class="flex flex-col gap-8 items-center" in:fade={{ duration: 100 }} >
+<div class="flex flex-col gap-8 items-center" in:fade|local={{ duration: 100 }} >
 	<Card class="w-full lg:max-w-xl">
 		<CardHeader>
 			<CardTitle>It ain't much, but it's honest work.</CardTitle>
@@ -28,7 +28,7 @@
 			<span class="flex gap-2">
 				<SpringAction boopParams={{ scale: 1.05, timing: 100}}>
 					<Button variant="outline" class="w-10 rounded-full p-0" href="https://twitter.com/FrankTheFinance" target="_blank">
-						<Discord class="w-6 h-6" />
+						<Twitter class="w-6 h-6" />
 					</Button>
 				</SpringAction>
 				<SpringAction boopParams={{ scale: 1.05, timing: 100}}>

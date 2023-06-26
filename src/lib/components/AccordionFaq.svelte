@@ -9,7 +9,7 @@
 	import { Separator } from "$components/ui/separator";
 </script>
 
-<div class="flex justify-center items-center w-full p-8 flex-col gap-4" in:fade={{ duration: 100 }}>
+<div class="flex justify-center items-center w-full p-8 flex-col gap-4" in:fade|local={{ duration: 100 }}>
   <h1 class="font-medium text-lg">Frequently asked questions</h1>
   <div class="w-full max-w-7xl pt-2">
     <Separator class="max-w-6xl" />
@@ -29,7 +29,7 @@
       <AccordionItem value="item-3">
         <AccordionTrigger>When will staking be available?</AccordionTrigger>
         <AccordionContent>
-          Staking will be available on July 29th, 2023. Stay tuned for updates!
+          Staking will be available on June 29th, 2023. Stay tuned for updates!
         </AccordionContent>
       </AccordionItem>
     </Accordion>
