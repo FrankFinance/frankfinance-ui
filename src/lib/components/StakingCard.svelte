@@ -15,6 +15,12 @@
     TabsList,
     TabsTrigger
   } from "$components/ui/tabs";
+  import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger
+  } from "$components/ui/tooltip";
   import { DollarSign, HashIcon, PercentIcon } from "lucide-svelte";
 </script>
 
@@ -74,9 +80,19 @@
           </Card>
         </CardContent>
         <CardFooter>
-          <Button variant="outline" class="w-full">
-            Stake
-          </Button>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger class="w-full">
+                <Button variant="outline" class="w-full">
+                  Stake
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent class="bg-red-100 w-full">
+                <p>Unavailable</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+          
         </CardFooter>
       </Card>
     </TabsContent>
