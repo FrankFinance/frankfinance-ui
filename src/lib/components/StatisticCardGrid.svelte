@@ -1,17 +1,11 @@
 <script>
+	import { tokenPrice } from '$lib/stores/token';
 	import { fade } from 'svelte/transition';
 	import { DollarSign, Banknote, Users } from "lucide-svelte";
 	import { Card, CardHeader, CardTitle, CardContent } from "$components/ui/card";
 	import Skeleton from '$components/ui/skeleton/Skeleton.svelte';
 	import { FRANK_TOKEN_CONTRACT } from '$lib/config';
-
-	const tokenPrice = async () => {
-		const res = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${FRANK_TOKEN_CONTRACT}`);
-		const { pairs } = await res.json();
-
-		const priceUsd = pairs[0].priceUsd;
-		return priceUsd;
-	}
+	import { onMount } from 'svelte';
 </script>
 
 <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4 p-8 lg:mx-auto" in:fade|local={{ duration: 100 }}>
@@ -26,11 +20,11 @@
 		</CardHeader>
 		<CardContent>
 			<div class="text-2xl font-bold">
-				{#await tokenPrice()}
+				{#if !$tokenPrice}
 					<Skeleton class="w-[100px] h-[20px]" />
-				{:then priceUsd}
-					{`$${priceUsd}`}
-				{/await}
+				{:else}
+					{`$${$tokenPrice}`}
+				{/if}
 			</div>
 		</CardContent>
 	</Card>
@@ -45,11 +39,11 @@
 		</CardHeader>
 		<CardContent>
 			<div class="text-2xl font-bold">
-				{#await tokenPrice()}
-					<Skeleton class="w-[100px] h-[20px] rounded-full" />
-				{:then priceUsd}
-					{`$${(Number(priceUsd) * 7800000).toLocaleString()}`}
-				{/await}
+				{#if !$tokenPrice}
+					<Skeleton class="w-[100px] h-[20px]" />
+				{:else}
+					{`$${(Number($tokenPrice) * 7800000).toLocaleString()}`}
+				{/if}
 			</div>
 		</CardContent>
 	</Card>
