@@ -20,14 +20,14 @@
 		</CardHeader>
 		<CardFooter class="flex justify-between">
 			<SpringAction boopParams={{ scale: 1.05, timing: 100}}>
-				<Button variant="outline" class="flex items-center gap-2">
+				<Button variant="outline" class="flex items-center gap-2" href="https://www.sushi.com/swap?fromChainId=42161&fromCurrency=0xaf88d065e77c8cC2239327C5EDb3A432268e5831&toChainId=42161&toCurrency=0x408eD55Cc16e71cd0F6770EEF9Bcd557d488a549&amount=10" target="_blank">
 					<img src={sushiswapLogo} class="w-6 h-6"/>
 					Buy on Sushiswap
 				</Button>
 			</SpringAction>
 			<span class="flex gap-2">
 				<SpringAction boopParams={{ scale: 1.05, timing: 100}}>
-					<Button variant="outline" class="w-10 rounded-full p-0" href="https://google.com" target="_blank">
+					<Button variant="outline" class="w-10 rounded-full p-0" href="https://twitter.com/FrankTheFinance" target="_blank">
 						<Discord class="w-6 h-6" />
 					</Button>
 				</SpringAction>
