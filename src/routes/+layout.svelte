@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.postcss';
+	import { MetaTags } from 'svelte-meta-tags';
 	import NavigationBar from '$components/NavigationBar.svelte';
 	import { Discord, GitHub, Twitter } from 'svelte-stacks-icons';
 	import { setInitialClassState } from "$components/ui/light-switch/light-switch";
@@ -10,6 +11,33 @@
 	<!-- This causes the new eslint-plugin-svelte: https://github.com/sveltejs/eslint-plugin-svelte/issues/492 -->
 	{@html `<\u{73}cript nonce="%sveltekit.nonce%">(${setInitialClassState.toString()})();</script>`}
 </svelte:head>
+
+<MetaTags 
+	title="$FRANK - Frank Finance" 
+	description="It ain't much, but it's honest work. Bringing fun back to DeFi."
+	openGraph={{
+    url: 'https://frankfinance.app/',
+    title: 'Frank Finance',
+    description: '$FRANK - It ain\'t much, but it\'s honest work.',
+    images: [
+      {
+        url: 'https://i.imgur.com/ltZVSgA.png',
+        width: 800,
+        height: 600,
+        alt: '$FRANK - It\'s honest work.'
+      },
+    ],
+    site_name: 'FrankFinance'
+  }}
+	twitter={{
+		handle: '@FrankTheFinance',
+		site: '@FrankTheFinance',
+		cardType: 'summary_large_image',
+		description: '$FRANK - It ain\'t much, but it\'s honest work.',
+		image: 'https://i.imgur.com/ltZVSgA.png',
+		imageAlt: '$FRANK - Frank Finance.'
+	}}
+/>
 
 <NavigationBar />
 
