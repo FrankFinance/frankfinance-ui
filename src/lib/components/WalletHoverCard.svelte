@@ -11,15 +11,8 @@
 	import { truncateMiddle } from "$lib/utils";
   import { userBalance } from "$lib/stores/user";
 	import { Button } from "./ui/button";
-  import { get } from "svelte/store";
 
   export let disconnect: () => void;
-
-  let userBalanceString: number;
-  
-  $: {
-    console.log($userBalance);
-  }
 </script>
 
 <HoverCard>
