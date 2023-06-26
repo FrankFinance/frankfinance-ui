@@ -53,9 +53,9 @@
               <DollarSign class="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div class="text-2xl font-bold">$45,231.89</div>
+              <div class="text-2xl font-bold">$0.00</div>
               <p class="text-xs text-green-600">
-                +20.1% in 24 hours
+                +0.00% in 24 hours
               </p>
             </CardContent>
           </Card>
@@ -69,7 +69,7 @@
               <PercentIcon class="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div class="text-2xl font-bold">1,720.20%</div>
+              <div class="text-2xl font-bold">2,000.00%</div>
             </CardContent>
           </Card>
         </CardContent>
@@ -109,7 +109,7 @@
               <DollarSign class="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div class="text-2xl font-bold">$1922.78</div>
+              <div class="text-2xl font-bold">$0.00</div>
             </CardContent>
           </Card>
           <Card>
@@ -122,9 +122,9 @@
               <DollarSign class="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
-              <div class="text-2xl font-bold">$19.27</div>
+              <div class="text-2xl font-bold">$0.00</div>
               <p class="text-xs text-muted-foreground">
-                181 $FRANK
+                0 $FRANK
               </p>
             </CardContent>
           </Card>

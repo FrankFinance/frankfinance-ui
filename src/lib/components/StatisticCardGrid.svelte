@@ -15,9 +15,9 @@
 			<DollarSign class="h-4 w-4 text-muted-foreground" />
 		</CardHeader>
 		<CardContent>
-			<div class="text-2xl font-bold">$1.20</div>
+			<div class="text-2xl font-bold">$0.00</div>
 			<p class="text-xs text-green-600">
-				+12.0% from yesterday
+				+0.00% from yesterday
 			</p>
 		</CardContent>
 	</Card>
@@ -31,7 +31,7 @@
 			<Banknote class="h-4 w-4 text-muted-foreground" />
 		</CardHeader>
 		<CardContent>
-			<div class="text-2xl font-bold">$123,017</div>
+			<div class="text-2xl font-bold">$100,000</div>
 		</CardContent>
 	</Card>
 	<Card>
@@ -44,9 +44,9 @@
 		<Users class="h-4 w-4 text-muted-foreground" />
 		</CardHeader>
 		<CardContent>
-			<div class="text-2xl font-bold">25,000,000</div>
+			<div class="text-2xl font-bold">7,500,000</div>
 			<p class="text-xs text-muted-foreground">
-				Fixed - no more will be minted.
+				17,500,000 has been burned.
 			</p>
 		</CardContent>
 	</Card>
