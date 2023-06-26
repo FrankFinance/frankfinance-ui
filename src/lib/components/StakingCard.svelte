@@ -35,7 +35,7 @@
         <CardHeader class="space-y-1">
           <CardTitle>Stake your $FRANK</CardTitle>
           <CardDescription>
-            Stake your $FRANK to start receiving a subsidized yield - first 30 days have boosted emissions.
+            Stake your $FRANK to start receiving a subsidized yield - first 30 days have boosted emissions. Staking begins July 29th.
           </CardDescription>
         </CardHeader>
         <CardContent class="grid gap-6">

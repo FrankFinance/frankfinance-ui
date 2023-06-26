@@ -29,7 +29,7 @@
       <AccordionItem value="item-3">
         <AccordionTrigger>When will staking be available?</AccordionTrigger>
         <AccordionContent>
-          Staking will be available on June 30th, 2023. Stay tuned for updates!
+          Staking will be available on July 29th, 2023. Stay tuned for updates!
         </AccordionContent>
       </AccordionItem>
     </Accordion>

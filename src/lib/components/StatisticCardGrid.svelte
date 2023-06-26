@@ -2,6 +2,16 @@
 	import { fade } from 'svelte/transition';
 	import { DollarSign, Banknote, Users } from "lucide-svelte";
 	import { Card, CardHeader, CardTitle, CardContent } from "$components/ui/card";
+	import Skeleton from '$components/ui/skeleton/Skeleton.svelte';
+	import { FRANK_TOKEN_CONTRACT } from '$lib/config';
+
+	const tokenPrice = async () => {
+		const res = await fetch(`https://api.dexscreener.com/latest/dex/tokens/${FRANK_TOKEN_CONTRACT}`);
+		const { pairs } = await res.json();
+
+		const priceUsd = pairs[0].priceUsd;
+		return priceUsd;
+	}
 </script>
 
 <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4 p-8 lg:mx-auto" in:fade={{ duration: 100 }}>
@@ -15,10 +25,13 @@
 			<DollarSign class="h-4 w-4 text-muted-foreground" />
 		</CardHeader>
 		<CardContent>
-			<div class="text-2xl font-bold">$0.00</div>
-			<p class="text-xs text-green-600">
-				+0.00% from yesterday
-			</p>
+			<div class="text-2xl font-bold">
+				{#await tokenPrice()}
+					<Skeleton class="w-[100px] h-[20px]" />
+				{:then priceUsd}
+					{`$${priceUsd}`}
+				{/await}
+			</div>
 		</CardContent>
 	</Card>
 	<Card>
@@ -31,7 +44,13 @@
 			<Banknote class="h-4 w-4 text-muted-foreground" />
 		</CardHeader>
 		<CardContent>
-			<div class="text-2xl font-bold">$100,000</div>
+			<div class="text-2xl font-bold">
+				{#await tokenPrice()}
+					<Skeleton class="w-[100px] h-[20px] rounded-full" />
+				{:then priceUsd}
+					{`$${(Number(priceUsd) * 7800000).toLocaleString()}`}
+				{/await}
+			</div>
 		</CardContent>
 	</Card>
 	<Card>
