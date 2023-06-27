@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { cn } from "$lib/utils";
 	import ConnectWallet from "./ConnectWallet.svelte";
-	import LightSwitch from "./ui/light-switch/LightSwitch.svelte";
+	//import LightSwitch from "./ui/light-switch/LightSwitch.svelte";
 
 	let className: string | undefined | null = undefined;
 	export { className as class };
@@ -19,7 +19,7 @@
 		</nav>
 
 		<nav class={cn("flex items-center space-x-4 lg:space-x-6 ml-auto", className)}>
-			<LightSwitch />
+			<!--<LightSwitch />-->
 			<ConnectWallet />
 		</nav>
 	</div>

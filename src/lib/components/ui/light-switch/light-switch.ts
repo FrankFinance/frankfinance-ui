@@ -23,11 +23,8 @@ export const modeCurrent = localStorageStore<boolean>("modeCurrent", false);
 
 /** Get the OS Preference for light/dark mode */
 export function getModeOsPrefers(): boolean {
-	const prefersLightMode = window.matchMedia(
-		"(prefers-color-scheme: light)"
-	).matches;
-	modeOsPrefers.set(prefersLightMode);
-	return prefersLightMode;
+	modeOsPrefers.set(true);
+	return true;
 }
 
 /** Get the User for light/dark mode */

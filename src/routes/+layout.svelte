@@ -3,14 +3,9 @@
 	import { MetaTags } from 'svelte-meta-tags';
 	import NavigationBar from '$components/NavigationBar.svelte';
 	import { Discord, GitHub, Twitter } from 'svelte-stacks-icons';
-	import { setInitialClassState } from "$components/ui/light-switch/light-switch";
+	//import { setInitialClassState } from "$components/ui/light-switch/light-switch";
 	import Button from '$components/ui/button/Button.svelte';
 </script>
-
-<svelte:head>
-	<!-- This causes the new eslint-plugin-svelte: https://github.com/sveltejs/eslint-plugin-svelte/issues/492 -->
-	{@html `<\u{73}cript nonce="%sveltekit.nonce%">(${setInitialClassState.toString()})();</script>`}
-</svelte:head>
 
 <MetaTags 
 	title="$FRANK - Frank Finance" 
