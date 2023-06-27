@@ -1,5 +1,5 @@
 <script>
-	import { Twitter } from "svelte-stacks-icons";
+	import { Discord } from "svelte-stacks-icons";
 	import { fade } from "svelte/transition";
 	import SpringAction from "$components/animate/SpringAction.svelte";
 	import { Button } from "$components/ui/button";
@@ -9,12 +9,12 @@
 	import farmerFrankLogo from '$lib/assets/frank-farmer.png'
 </script>
 <div class="flex flex-col gap-8 items-center" in:fade|local={{ duration: 100 }} >
-	<Card class="w-full lg:max-w-xl">
+	<Card class="lg:max-w-2xl">
 		<CardHeader>
 			<CardTitle>It ain't much, but it's honest work.</CardTitle>
 			<CardDescription class="flex flex-col items-center gap-6">
 				<p class="self-start">You'll need some $FRANK if you want to get your hands dirty, farmer. 
-				Once you've done that, join us in our discord.</p>
+					Feel free to reach out to us on discord if you have any questions.</p>
 				<img src={farmerFrankLogo} class="object-scale-down w-40 md:w-72" alt="Frank The Farmer" />
 			</CardDescription>
 		</CardHeader>
@@ -27,8 +27,8 @@
 			</SpringAction>
 			<span class="flex gap-2">
 				<SpringAction boopParams={{ scale: 1.05, timing: 100}}>
-					<Button variant="outline" class="w-10 rounded-full p-0" href="https://twitter.com/FrankTheFinance" target="_blank">
-						<Twitter class="w-6 h-6" />
+					<Button variant="outline" class="w-10 rounded-full p-0" href="hhttps://discord.gg/p3cKYHCS" target="_blank">
+						<Discord class="w-6 h-6" />
 					</Button>
 				</SpringAction>
 				<SpringAction boopParams={{ scale: 1.05, timing: 100}}>
