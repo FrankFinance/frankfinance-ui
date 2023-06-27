@@ -26,11 +26,10 @@
 
 {#if onLoad}
 	<div class="flex flex-col mt-16	mb-16">
-		<div class="flex gap-14 lg:gap-24 justify-center lg:items-end w-full p-8 lg:flex-row flex-col">
+		<div class="flex gap-14 lg:gap-8 justify-center lg:items-end w-full p-8 lg:flex-row flex-col">
 			<CtaCard />
 			<StakingCard />
 		</div>
 		<StatisticCardGrid />
-		<AccordionFaq />
 	</div>
 {/if}

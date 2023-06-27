@@ -25,7 +25,7 @@
 </script>
 
 <div in:fade|local={{ duration: 100 }} > 
-  <Tabs value="stake" class="lg:max-w-xl">
+  <Tabs value="stake" class="lg:max-w-2xl">
     <TabsList class="grid w-full grid-cols-2">
       <TabsTrigger value="stake">Stake</TabsTrigger>
       <TabsTrigger value="claim">Claim</TabsTrigger>

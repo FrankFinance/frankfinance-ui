@@ -8,7 +8,7 @@
 	import { onMount } from 'svelte';
 </script>
 
-<div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4 p-8 lg:mx-auto" in:fade|local={{ duration: 100 }}>
+<div class="grid gap-[35px] md:grid-cols-2 lg:grid-cols-4 p-8 lg:mx-auto" in:fade|local={{ duration: 100 }}>
 	<Card>
 		<CardHeader
 			class="flex flex-row items-center justify-between space-y-0 pb-2"
@@ -65,7 +65,7 @@
 	</Card>
 	<Card>
 		<CardHeader
-			class="flex flex-row items-center justify-between space-y-0 pb-2 md:space-x-44"
+			class="flex flex-row items-center justify-between space-y-0 pb-2 md:space-x-48"
 		>
 			<CardTitle class="text-sm font-medium">
 				Emissions
